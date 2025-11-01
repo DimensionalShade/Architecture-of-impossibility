@@ -17,6 +17,10 @@ It models Chaitin’s Ω not as a number, but as a phase boundary — a computat
 
 ## Usage
 
+```bash
+bin/omega_trigger.sh
+```\n
+
 python omega_trigger.py
 
 If Ω exceeds the threshold, the system enters symbolic mode and invokes agent Ω.
