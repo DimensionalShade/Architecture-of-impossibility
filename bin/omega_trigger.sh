@@ -11,6 +11,8 @@ above=$(echo "$omega > $threshold" | bc)
 if [ "$above" -eq 1 ]; then
   echo "⚠️ Ω exceeds threshold — activating phase"
   python agents/omega.py
+
+  echo "$(date) Ω-phase activated" >> log/omega.log
 else
   echo "✅ Ω below threshold — classical mode continues"
 fi

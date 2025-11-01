@@ -11,6 +11,8 @@ case "$1" in
     python omega_trigger.py
     ;;
   --log)
+
+    cat log/omega.log 2>/dev/null || echo "No log found."
     cat log/omega.log 2>/dev/null || echo "No log found."
     ;;
   *)
