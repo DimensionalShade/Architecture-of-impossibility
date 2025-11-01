@@ -18,6 +18,13 @@ It models Chaitin’s Ω not as a number, but as a phase boundary — a computat
 ## Usage
 
 ```bash
+bin/omega --trigger   # Run Ω-phase trigger
+bin/omega --agent     # Activate agent Ω
+bin/omega --status    # Show current Ω estimate
+bin/omega --log       # View phase log
+```\n
+
+```bash
 bin/omega_trigger.sh
 ```\n
 

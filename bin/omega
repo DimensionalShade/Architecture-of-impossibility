@@ -1,0 +1,19 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+case "$1" in
+  --trigger)
+    bash bin/omega_trigger.sh
+    ;;
+  --agent)
+    python agents/omega.py
+    ;;
+  --status)
+    python omega_trigger.py
+    ;;
+  --log)
+    cat log/omega.log 2>/dev/null || echo "No log found."
+    ;;
+  *)
+    echo "Usage: omega [--trigger | --agent | --status | --log]"
+    ;;
+esac
