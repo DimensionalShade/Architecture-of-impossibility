@@ -1,0 +1,16 @@
+omega_phase:
+  trigger: "Ω > threshold"
+  condition: "entropy exceeds computable boundary"
+  agent: "Ω"
+  acts:
+    - name: halt
+      effect: "terminate classical computation"
+    - name: switch
+      effect: "enter epistemic rupture"
+    - name: transcend
+      effect: "invoke architecture of impossibility"
+  symbols:
+    - "Ω"
+    - "⊘"
+    - "∅"
+  log: "Ω-phase activated at entropy threshold"
